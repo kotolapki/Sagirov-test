@@ -1,0 +1,224 @@
+.form-wrapper {
+  margin: 0 auto;
+  width: 374px;
+}
+
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  font-family: SF Compact Display;
+}
+
+.form__legend {
+  font-family: Roboto;
+  margin-bottom: 5px;
+  font-size: 47px;
+  line-height: 55px;
+  font-weight: 700;
+  text-align: center;
+  color: #1C1C1C;
+}
+
+.form__clarification-text {
+  margin-top: 0;
+  margin-bottom: 98px;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #1C1C1C;
+}
+
+.form__list {
+  margin-bottom: 41px;
+}
+
+.form__item {
+  position: relative;
+}
+
+.form__item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.form__label {
+  font-size: 15px;
+  line-height: 18px;
+  color: #939292;
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  transition: font-size 0.3s, top 0.3s;
+}
+
+.form__input {
+  padding: 0;
+  width: 374px;
+  height: 26px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #1C1C1C;
+  border: none;
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.form__input:active,
+.form__input:focus,
+.form_input:valid {
+  border-bottom: 1px solid #1C1C1C;
+}
+
+.form:invalid .form__input:invalid:focus {
+  color: #D00000;
+  border-bottom: 1px solid #D00000;
+}
+
+.form__label--changed {
+  top: -19px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.form__password-btn {
+  position: absolute;
+  top: 4px;
+  right: 1px;
+  outline: none;
+}
+
+.form__password-btn:hover svg path,
+.form__password-btn:focus svg path  {
+  stroke: #1C1C1C !important;
+}
+
+.form__password-btn:active svg path {
+  stroke: #1C1C1C !important;
+  opacity: 0.6;
+}
+
+.form__agreement-wrapper {
+  margin-bottom: 33px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.form__agreement-checkbox {
+  top: 15px;
+  left: 10px;
+}
+
+.form__agreement-label {
+  padding-left: 32px;
+  font-size: 13px;
+  line-height: 16px;
+  position: relative;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.form__agreement-label:hover,
+.form__agreement-label:focus {
+  opacity: 0.4;
+}
+
+.form__agreement-label:active {
+  opacity: 0.8;
+}
+
+.form__agreement-label::before {
+  content: '';
+  width: 17px;
+  height: 17px;
+  border: 1px solid #DEDEDE;
+  box-sizing: border-box;
+  position: absolute;
+  left: 2px;
+  top: -1px;
+}
+
+.form__agreement-checkbox:checked ~ .form__agreement-label::after {
+  content: '';
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  background: #1C1C1C;
+}
+
+.form__submit-btn {
+  width: 100%;
+  height: 44px;
+  font-family: SF Compact Display;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  outline: none;
+  color: #FFFFFF;
+  background: #DEDEDE;
+  pointer-events: none;
+}
+
+.form__submit-btn:hover,
+.form__submit-btn:focus {
+  opacity: 0.4;
+}
+
+.form__submit-btn:active {
+  opacity: 0.8;
+} 
+
+.form:valid .form__submit-btn {
+  background: #1C1C1C;
+  pointer-events: all;
+}
+
+.asking-block {
+  display: flex;
+}
+
+.asking-block__text {
+  margin-right: 12px;
+  font-family: SF Compact Display;
+  font-size: 17px;
+  line-height: 20px;
+  color: #939292;
+}
+
+.asking-block__button {
+  font-family: SF Compact Display;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  color: #20201F;
+  outline: none;
+}
+
+.asking-block__button:hover,
+.asking-block__button:focus {
+  opacity: 0.4;
+}
+
+.asking-block__button:active {
+  opacity: 0.8;
+}

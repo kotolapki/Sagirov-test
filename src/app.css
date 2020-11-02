@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Roboto';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Roboto'),
+    local('Roboto'),
+    url('assets/fonts/Roboto/Roboto.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Compact Display';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('SF Compact Display'),
+    local('SF Compact Display'),
+    url('assets/fonts/SF Compact Display/SFCompactDisplay-Regular.woff2') format('woff2');
+}
+
+.app-container {
+  padding-top: 136px;
+}
